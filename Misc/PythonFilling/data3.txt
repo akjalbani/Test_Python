@@ -1,0 +1,7 @@
+David,40,English
+Emmanuel,35,Maths
+Yue,25,Python
+Daniel,45,C++
+Peter,38,Networking
+James,33,Cloud
+Abdalla,28,WHS
