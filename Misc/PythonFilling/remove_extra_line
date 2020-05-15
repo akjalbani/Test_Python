@@ -1,0 +1,7 @@
+'''example 3: Remove the extra line '''
+file = open("data1.txt","r")
+names = []
+for line in file:
+  names.append(line.strip()) # strip() function will remove any extra spaces and lines
+print(names) 
+file.close()
