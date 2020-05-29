@@ -1,5 +1,6 @@
-# email extractor, this program gets user input as email address and then process to extract lastname. firstname and email addresses, domain and orgnization name
-#  Version 1.0
+# email extractor, this program gets user input as anemail address and then process to extract 
+#lastname. firstname and email addresses, domain and orgnization name
+#  version 1.0
 # # author: AAJ
 
 
