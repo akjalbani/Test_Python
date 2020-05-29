@@ -5,7 +5,7 @@
 
 
 
-# the input format for email mustbe dot between the names such as fname.lname@example.com
+# the input format for email -> dot between the names such as fname.lname@example.com
 emailaddress = input("Enter email address-> ")
 list_address=emailaddress.split("@", 1) # this split string into list based on the @ sign
 username = list_address[0] # username will be at index 0
