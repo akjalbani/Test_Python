@@ -1,0 +1,9 @@
+# Reverse String
+message = 'Hello World'
+reverseMsg = '' 
+i = len(message) - 1
+
+while i >= 0:
+  reverseMsg = reverseMsg + message[i]
+  i = i - 1
+print(reverseMsg)
