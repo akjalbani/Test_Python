@@ -2,7 +2,7 @@
 # follow the tutorial and following will be the final code for encryption of messages
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-key =3
+key =int(input("Enter a Key: "))
 newMessage =''
 message = input('Please enter a message: ')
 for character in message:
