@@ -1,0 +1,3 @@
+How to read and write csv files as described in the tutorial, please follow the link below to complete the tutorial.
+
+https://www.protechtraining.com/blog/post/python-for-beginners-reading-manipulating-csv-files-737
