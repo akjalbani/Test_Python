@@ -38,7 +38,7 @@ print(devices)
 ## create new empty dictionary and add items to it
 student = {}
 student["id"] = 100232
-student["name"] = "Micheal"
+student["name"] = "Michael"
 student["class"] = "python"
 student["year"] = 2020
 print(student)
