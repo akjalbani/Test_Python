@@ -1,6 +1,5 @@
-# you should run this script usig python Desktop IDE, online Editor repl.it may not support
+# you should run this script usig python Desktop IDE such as IDLE, pycharm .., online Editor repl.it may not support
 # As loop is indefinte, you need forecfully close the python running script.
-# Enjoy the script and have fun with the friends.
 # This script is only for the learning purpose and expecting same from you to utilize the script for learing purpose not to harm others.
 # author A.A Jalbani
 # version 1.0
@@ -16,4 +15,5 @@ while True:
     webbrowser.open(url)
     seconds = random.randrange(5,20)
     time.sleep(seconds)
+ 
   
