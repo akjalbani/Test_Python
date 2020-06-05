@@ -1,1 +1,14 @@
-Some useful collection of python scripts
+# How to package / deploy python project by creating executable file.
+@ watch this you tube video
+https://www.youtube.com/watch?v=UZX5kH72Yx4
+
+Useful resource:
+https://www.python.org/
+How to install pyinstaller
+https://pyinstaller.readthedocs.io/en/stable/installation.html
+
+
+NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers. It is designed to be as small and flexible as possible and is therefore very suitable for internet distribution.
+https://nsis.sourceforge.io
+
+
