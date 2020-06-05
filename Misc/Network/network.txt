@@ -1,1 +1,3 @@
 This folder contains the scripst related to networking/ pen testing
+DEF CON 23 - Van Albert and Banks - Looping Surveillance Cameras through Live Editing
+https://www.youtube.com/watch?v=RoOqznZUClI
