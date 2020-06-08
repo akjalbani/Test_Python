@@ -1,3 +1,5 @@
+#source: linkedin course programming realworld
+
 """ Creating and Combining Sets of Friends """
 
 college = set(['Bill', 'Katy', 'Verne', 'Dillon',
