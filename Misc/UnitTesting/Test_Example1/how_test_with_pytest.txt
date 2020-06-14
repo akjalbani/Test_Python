@@ -1,0 +1,18 @@
+First you need to install pytest library, it does not come with the standard python library,
+run command propmpt and install pytest using pip command
+
+c>Test_Python/Misc/UnitTesting/Test_Example1/pip install pytest
+
+# now run the pytest for your test_math_func file
+
+c>Test_Python/Misc/UnitTesting/Test_Example1/pytest test_math_func.py
+
+# you see the result in green that 2 tests passed.
+# you can run more detail version of the test by adding -v verbose
+
+c>Test_Python/Misc/UnitTesting/Test_Example1/pytest test_math_func.py -v
+
+# you can test specific method to test, run the file with ::name of the method
+c>Test_Python/Misc/UnitTesting/Test_Example1/pytest test_math_func.py::test_add
+c>Test_Python/Misc/UnitTesting/Test_Example1/pytest test_math_func.py::test_product
+
