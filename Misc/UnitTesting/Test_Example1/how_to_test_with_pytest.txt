@@ -1,5 +1,8 @@
 First you need to install pytest library, it does not come with the standard python library,
 run command propmpt and install pytest using pip command
+Note: My unit test files are located at this path c>Test_Python/Misc/UnitTesting/Test_Example1/ 
+you can use your own 
+
 
 c>Test_Python/Misc/UnitTesting/Test_Example1/pip install pytest
 
