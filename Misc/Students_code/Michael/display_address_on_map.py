@@ -1,4 +1,4 @@
-# origional author: Michael Atkinson
+# author: Michael Atkinson
 # 16/06/2020
 
 import webbrowser
