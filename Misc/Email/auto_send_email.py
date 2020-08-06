@@ -5,7 +5,7 @@
 # the code is written for only learning purpose,Do not use code for any malcious activity
 # you need smtp address of the email client to send an email- if you want to send email from gmail account you need to change setting to low security
 # version 1.0
-# @A.A.Jalbani
+
 
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -26,7 +26,7 @@ msg.attach(MIMEText(body,'plain'))
 email='sender email address / user id'   # for example abc@outlook.com
 password='sender password'  # password of your email address
 
-mail=smtplib.SMTP('smtp address of your email client',587)  # for example for outlook: smtp.office365.com
+mail=smtplib.SMTP('smtp address of your email client',587)  # for example for outlook: smtp.office365.com and for Gmail: smtp.gmail.com
 mail.ehlo()
 mail.starttls()
 mail.login(email,password)
