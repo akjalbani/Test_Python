@@ -2,7 +2,7 @@
 # This will run on IDLE or pycharm, it will not run on REPL.IT
 # you have to install packages using pip command 
 # Do not send too many emails- email client may block your email address
-# the code is written for only learning purpose, Do not use code for any malcious activity
+# the code is written for only learning purpose, Do not use code for any malicious activity
 # you need smtp address of the email client to send an email- if you want to send email from gmail account you need to change setting to low security
 # version 1.0
 
