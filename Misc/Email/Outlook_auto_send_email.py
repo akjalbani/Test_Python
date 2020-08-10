@@ -25,9 +25,9 @@ html_body = """
             Hello Friend!
         </h1>
         <h2 style="font-family: 'Lucida Handwriting'; font-size: 56; font-weight: bold; color: #9eac9c;">
-         Write you message herer</h2>
+         Write you message here</h2>
         <span style="font-family: 'Lucida Sans'; font-size: 20; color: #8d395c;">
-           You can you different html formatting in your message body. 
+           You can you use different html formatting in your message body. add images, styles to fonts. 
             
         </span>
     </div><br>
