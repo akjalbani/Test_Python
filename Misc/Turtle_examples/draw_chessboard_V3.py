@@ -7,8 +7,8 @@ turtle = turtle.Turtle()
 turtle.speed(10)
 pos = 0
 #######################################################
-def square_color1(color1):
-  turtle.color(color1)
+def square_color1(color):
+  turtle.color(color)
   turtle.begin_fill()
   for i in range(4):
     turtle.forward(100)
