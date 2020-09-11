@@ -8,6 +8,7 @@ x = tuple1 + tuple2
 y = max(x)
 print(y)
 ########################################
+# solution 2: contributor : Akhtar
 # Another solution for  tuple1,tuple2 = (123, 'xyz', 'zara', 'abc'), (456, 700, 200)
 # As we can not update or modify tuple, so we have to convert tuple to list and find maximum value
 tuple1,tuple2 = (123, 'xyz', 'zara', 'abc'), (456, 700, 200)
