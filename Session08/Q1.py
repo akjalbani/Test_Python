@@ -3,4 +3,4 @@ t = ("w","a","3","e","p","o","u","b","a","e")
 # 4th element 
 print(t[3])
 # or
-print(t[-7])
+print(t[-4])
