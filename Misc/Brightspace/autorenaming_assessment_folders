@@ -1,0 +1,72 @@
+# This scripts is created for teachers to automate process of downloading and renaming students folders from Brightspapce
+
+import os
+from zipfile import ZipFile
+
+print("---------------------------------------------------------------------")
+print("Welcome to Auto renaming script created by: Akhtar")
+print("---------------------------------------------------------------------")
+print("This script is specifically designed for Teachers using Brightspace!!")
+print("This script will rename long folder names with students name")
+print("and will palace all students folder under the CRN folder.")
+print("---------------------------------------------------------------------")
+print("Before Running this script, Do the following things ::")
+print("      1. Download Students Assessments as a Zip Folder form Brightspace.")
+print("      2. Do not change the downloaded folder name.")
+print("      3. Run this script from the same folder where you have placed downloaded folder.")
+
+print("======================================================================")
+zipfoldername = input("Please Enter Zip Folder Name: ")
+print()
+crn = input("Enter CRN number: ")
+
+print("======================================================================")
+crn = "CRN"+crn
+if not(zipfoldername.endswith(".zip")):
+    zipfoldername= zipfoldername+".zip"
+
+# Create a ZipFile Object and load zip folder in it
+with ZipFile(zipfoldername, 'r') as zipObj:
+   # Extract all the contents of zip file in a CRN directory
+   zipObj.extractall(crn)
+# get lcoation of current working directory
+path = os.getcwd()
+path = path+"/"+crn+"/"
+# remove index.html file, this file is created automatically when you unzip folder
+filename = path+"/"+"index.html"
+os.remove(filename)
+foldernames = os.listdir(path)
+total = len(foldernames)
+index = 0
+studentname=""
+i = 1
+count = 0
+for foldername in foldernames:
+    names = foldername.split("-")
+    
+    if studentname != names[2]:
+        studentname = names[2]## brightspace stores names at index 2
+   # These else if statements work when there is more than one submission of the task of the same student, this will add number with the submission
+    elif count == 0:
+        studentname = names[2]+str(i)
+        count = 1
+        
+    elif count ==1:
+        studentname = names[2]+str(i)
+        count = 2
+        i = 2
+    elif count ==2:
+        studentname = names[2]+str(i)
+        count = 3
+        i = 3
+            
+        
+        
+    #print(studentname)
+    if index < total:
+        os.rename(path+foldernames[index],path+studentname)
+        index = index + 1
+print("Files are renamed successfully")
+print("Thank you for using auto script!")
+print("==========================================================")
+
