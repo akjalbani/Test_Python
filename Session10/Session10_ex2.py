@@ -4,10 +4,10 @@ class ChangeCase:
   def get_String(self):
     self.msg = input("Enter your message:-> ")
     return self.msg
-  def print_String(self,msg):
-     print(self.msg.upper())
+  def toUpperCase(self,msg):
+    return self.msg.upper()
+     #print(self.msg.upper())
 
 obj = ChangeCase()
 user_input =obj.get_String()
-print(user_input)
-obj.print_String(user_input)
+print(obj.toUpperCase(user_input))
