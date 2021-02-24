@@ -19,5 +19,5 @@ with open("one.csv",'r') as f:
   reader = from_csv(f)
 print(reader)
 
-## More example can be found at https://zetcode.com/python/prettytable/
+## For more example visit this url-> https://zetcode.com/python/prettytable/
 
