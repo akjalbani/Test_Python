@@ -1,5 +1,6 @@
 # This scripts is created for teachers to automate process of downloading and renaming students folders from Brightspapce
-
+#@AAJ
+#2020
 import os
 from zipfile import ZipFile
 
