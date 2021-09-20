@@ -32,5 +32,5 @@ try:
         
         #print(result['data'])
         print("----------------------")
-except shodan.APIError:
-    print("API Error ")
+except shodan.APIError as e:
+    print('Error : {} '. format (e))
