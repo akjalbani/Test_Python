@@ -13,3 +13,6 @@ It is designed to be as small and flexible as possible and is therefore very sui
 https://nsis.sourceforge.io
 
 
+
+How to Create Python Exe file
+https://github.com/akjalbani/Test_Python/wiki/How-to-create-Python-Executable-file
