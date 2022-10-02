@@ -1,0 +1,72 @@
+# Python code to implement Vigenere Cipher
+# This code snipt contains both encryption and decryption functions.
+# Make sure to understand the process of the Vigenere Cipher
+# Ref 1: https://www.geeksforgeeks.org/vigenere-cipher/
+# Ref 2: https://www.javatpoint.com/vigenere-cipher
+####################################################################################################################
+# This function generates the key in a cyclic manner until # it's length isn't equal to # the length of original text
+def generateKey(string, key):
+	key = list(key)
+	if len(string) == len(key):
+		return(key)
+	else:
+		for i in range(len(string) -
+					len(key)):
+			key.append(key[i % len(key)])
+	return("" . join(key))
+	###############################################################################
+# This function returns the encrypted text generated with the help of the key
+
+def cipherText(string, key):
+	cipher_text = []
+	for i in range(len(string)):
+		x = (ord(string[i]) +
+			ord(key[i])) % 26
+		x += ord('A')
+		cipher_text.append(chr(x))
+	return("" . join(cipher_text))
+	##############################################################################
+# This function decrypts the encrypted text and returns the original text
+
+def originalText(cipher_text, key):
+	orig_text = []
+	for i in range(len(cipher_text)):
+		x = (ord(cipher_text[i]) -
+			ord(key[i]) + 26) % 26
+		x += ord('A')
+		orig_text.append(chr(x))
+	return("" . join(orig_text))
+	
+#####################################################################################
+# main code.
+print("====================================")
+print("Vigenere Cipher")
+print("====================================")
+print("------MENU--------")
+print("1. Encrypt Plain Text")
+print("2. Decrypt Cypher Text")
+print("3. Exit")
+choice = input("Enter your choice: ")
+print("==================================")
+if choice == "1":
+  print("Let us Make our message more secret")
+  string = input("Enter Plain Text-> ")
+  keyword = input("Enter Key -> ")
+  key = generateKey(string, keyword)
+  cipher_text = cipherText(string,key)
+  print("Here is your secret message")
+  print("----------------------------")
+  print("Ciphertext :", cipher_text)
+  print("-----------------------------")
+elif choice == '2':
+  print("Let us see hidden secret ")
+  cipher_text = input("Enter cypher Text-> ")
+  keyword = input("Enter Key -> ")
+  key = generateKey(cipher_text, keyword)
+  print("----------------------------")
+  print("Original/Decrypted Text :",
+  originalText(cipher_text, key))
+  print("----------------------------")
+else:
+  print("you are leavig so sad!!!!!")
+
