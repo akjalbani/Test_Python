@@ -1,0 +1,12 @@
+# use grep command in linux
+# Search for lines that contain "error" or "warning"
+grep -E "error|warning" /path/to/log/file.log
+
+# Search for lines that contain "error" and "user"
+grep "error" /path/to/log/file.log | grep "user"
+
+# Search for lines that do not contain "error"
+grep -v "error" /path/to/log/file.log
+
+# Search for lines that contain "error" and print the line number
+grep -n "error" /path/to/log/file.log
