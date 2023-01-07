@@ -1,0 +1,21 @@
+Web reconnaissance is the process of gathering information 
+about a website or web server in order to understand its capabilities 
+and vulnerabilities. 
+
+Here are some common techniques that can be used for web recon:
+
+DNS enumeration: This involves querying DNS servers to gather information about domain names, 
+subdomains, and related records. Tools like dig and nslookup can be used for this purpose.
+
+Whois lookup: This involves using the whois command or a web-based whois lookup service to 
+gather information about the owner and registrar of a domain.
+
+HTTP header analysis: This involves sending HTTP requests to a web server and analyzing the 
+response headers to gather information about the server, its configuration, and the technologies 
+it is using. Tools like curl and wget can be used for this purpose.
+
+Directory and file enumeration: This involves attempting to access directories and files on a 
+web server that are not publicly listed. This can be done manually or using tools like dirb and dirbuster.
+
+Vulnerability scanning: This involves using tools like nmap and nessus to scan a web server 
+for known vulnerabilities and misconfigurations.
